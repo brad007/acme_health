@@ -1,0 +1,102 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "3:5776513658503119336",
+      "lastPropertyId": "13:3947717711740582918",
+      "name": "QuestionnaireDTO",
+      "properties": [
+        {
+          "id": "1:6632905835962365322",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5349302978972900158",
+          "name": "gender",
+          "type": 9
+        },
+        {
+          "id": "3:494049284747202926",
+          "name": "exerciseFrequency",
+          "type": 9
+        },
+        {
+          "id": "4:9143601751946130492",
+          "name": "isSmoking",
+          "type": 1
+        },
+        {
+          "id": "5:7060515495677610154",
+          "name": "sleepDuration",
+          "type": 6
+        },
+        {
+          "id": "6:2033645248198517846",
+          "name": "height",
+          "type": 8
+        },
+        {
+          "id": "7:7177731360316256332",
+          "name": "weight",
+          "type": 8
+        },
+        {
+          "id": "8:5552134053540323006",
+          "name": "chronicIllness",
+          "type": 9
+        },
+        {
+          "id": "9:3471177367132144944",
+          "name": "healthRating",
+          "type": 6
+        },
+        {
+          "id": "10:8546171284696043197",
+          "name": "dietaryRestrictions",
+          "type": 30
+        },
+        {
+          "id": "11:4922659886570029891",
+          "name": "alcoholConsumption",
+          "type": 9
+        },
+        {
+          "id": "12:686690169903621758",
+          "name": "stress",
+          "type": 9
+        },
+        {
+          "id": "13:3947717711740582918",
+          "name": "age",
+          "type": 6
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:5776513658503119336",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [
+    5224874209448417396,
+    3313283345418005554
+  ],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    8080977106039348917,
+    8543996204794018846,
+    7804775792506401490,
+    778258599351484976,
+    6578955559627437560,
+    8574913432800160069
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}
