@@ -41,8 +41,9 @@ class QuestionnaireMapper implements Mapper<QuestionnaireDTO, Questionnaire> {
           .firstWhere((c) => c.name == value.chronicIllness),
       healthRating: Number(value.healthRating.toOption()),
       dietaryRestrictions: value.dietaryRestrictions
-              ?.map((e) =>
-                  DietaryRestriction.values.firstWhere((d) => d.name == e))
+              ?.map(
+                (e) => DietaryRestriction.values.firstWhere((d) => d.name == e),
+              )
               .toList() ??
           [],
       alcoholConsumption: AlcoholConsumption.values

@@ -13,9 +13,10 @@ class ObjectBoxStore {
 
   static Future<ObjectBoxStore> getInstance() async {
     final store = await openStore(
-        directory:
-            p.join((await getApplicationDocumentsDirectory()).path, "obx-demo"),
-        macosApplicationGroup: "objectbox.demo");
+      directory:
+          p.join((await getApplicationDocumentsDirectory()).path, 'obx-demo'),
+      macosApplicationGroup: 'objectbox.demo',
+    );
     return ObjectBoxStore._create(store);
   }
 

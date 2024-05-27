@@ -48,7 +48,7 @@ class HomePage extends StatelessWidget {
                   },
                   title:
                       Text('questionnaires: ${state.questionnaires[index].id}'),
-                  trailing: Icon(Icons.chevron_right),
+                  trailing: const Icon(Icons.chevron_right),
                 );
               },
             );

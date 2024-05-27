@@ -35,8 +35,10 @@ class ChronicIllnessDropdown extends StatelessWidget {
                     onChanged: (value) {
                       if (value != null) {
                         context.read<QuestionnaireFormBloc>().add(
-                            QuestionnaireFormEvent.chronicIllnessChanged(
-                                value));
+                              QuestionnaireFormEvent.chronicIllnessChanged(
+                                value,
+                              ),
+                            );
                       }
                     },
                   ),

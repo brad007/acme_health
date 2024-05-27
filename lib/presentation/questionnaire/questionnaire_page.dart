@@ -59,15 +59,16 @@ class QuestionnairePage extends StatelessWidget {
                   actions: [
                     if (state.isEditing)
                       IconButton(
-                          onPressed: () {
-                            context
-                                .read<QuestionnaireFormBloc>()
-                                .add(const QuestionnaireFormEvent.delete());
-                          },
-                          icon: const Icon(
-                            Icons.delete,
-                            color: Colors.red,
-                          ))
+                        onPressed: () {
+                          context
+                              .read<QuestionnaireFormBloc>()
+                              .add(const QuestionnaireFormEvent.delete());
+                        },
+                        icon: const Icon(
+                          Icons.delete,
+                          color: Colors.red,
+                        ),
+                      ),
                   ],
                 ),
                 body: SingleChildScrollView(

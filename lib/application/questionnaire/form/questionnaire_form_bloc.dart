@@ -130,7 +130,7 @@ class QuestionnaireFormBloc
             state.copyWith(
               questionnaire: state.questionnaire.copyWith(
                 dietaryRestrictions: [
-                  ...state.questionnaire.dietaryRestrictions
+                  ...state.questionnaire.dietaryRestrictions,
                 ]..remove(value.dietaryRestriction),
               ),
             ),

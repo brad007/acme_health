@@ -95,7 +95,7 @@ class LoginPage extends StatelessWidget {
                         },
                         obscureText: !state.showPassword,
                       ),
-                      Spacer(),
+                      const Spacer(),
                       AcmeHealthButton(
                         onPressed: () {
                           if (state.isFormValid) {
@@ -144,6 +144,5 @@ class LoginPage extends StatelessWidget {
         },
       ),
     );
-    return const Scaffold();
   }
 }

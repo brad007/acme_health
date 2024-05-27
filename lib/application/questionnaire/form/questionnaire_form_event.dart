@@ -12,10 +12,12 @@ class QuestionnaireFormEvent with _$QuestionnaireFormEvent {
       _GenderChanged;
 
   const factory QuestionnaireFormEvent.exerciseFrequencyChanged(
-      ExerciseFrequency excerciceFrequency) = _ExerciseFrequencyChanged;
+    ExerciseFrequency excerciceFrequency,
+  ) = _ExerciseFrequencyChanged;
 
-  const factory QuestionnaireFormEvent.isSmokingChanged(
-      {required bool isSmoking}) = _SmokingChanged;
+  const factory QuestionnaireFormEvent.isSmokingChanged({
+    required bool isSmoking,
+  }) = _SmokingChanged;
 
   const factory QuestionnaireFormEvent.sleepDurationChanged(int sleepDuration) =
       _SleepDurationChanged;
@@ -27,17 +29,21 @@ class QuestionnaireFormEvent with _$QuestionnaireFormEvent {
       _WeightChanged;
 
   const factory QuestionnaireFormEvent.chronicIllnessChanged(
-      ChronicIllness chronicIllness) = _ChronicIllnessChanged;
+    ChronicIllness chronicIllness,
+  ) = _ChronicIllnessChanged;
 
   const factory QuestionnaireFormEvent.healthRatingChanged(int healthRating) =
       _HealthRatingChanged;
 
   const factory QuestionnaireFormEvent.dietaryRestrictionAdded(
-      DietaryRestriction dietaryRestriction) = _DietaryRestrictionAdded;
+    DietaryRestriction dietaryRestriction,
+  ) = _DietaryRestrictionAdded;
   const factory QuestionnaireFormEvent.dietaryRestrictionRemoved(
-      DietaryRestriction dietaryRestriction) = _DietaryRestrictionRemoved;
+    DietaryRestriction dietaryRestriction,
+  ) = _DietaryRestrictionRemoved;
   const factory QuestionnaireFormEvent.alcoholComuptionChanged(
-      AlcoholConsumption alchoholConsumption) = _AlchoholConsumptionChanged;
+    AlcoholConsumption alchoholConsumption,
+  ) = _AlchoholConsumptionChanged;
   const factory QuestionnaireFormEvent.stressLevelChanged(Stress stress) =
       _StressChanged;
 

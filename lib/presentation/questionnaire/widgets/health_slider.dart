@@ -27,7 +27,7 @@ class HealthSlider extends StatelessWidget {
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
                   ),
-                )
+                ),
               ],
             ),
             const SizedBox(height: 8),
@@ -38,7 +38,8 @@ class HealthSlider extends StatelessWidget {
               value: state.questionnaire.healthRating.safeValue.toDouble(),
               onChanged: (value) {
                 context.read<QuestionnaireFormBloc>().add(
-                    QuestionnaireFormEvent.healthRatingChanged(value.toInt()));
+                      QuestionnaireFormEvent.healthRatingChanged(value.toInt()),
+                    );
               },
             ),
           ],

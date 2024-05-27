@@ -64,10 +64,15 @@ void main() {
 
       test('should return ApiFailure.invalidCredentials on invalid credentials',
           () async {
-        when(mockHttpService.post('https://api.example.com/signin', body: {
-          'email': testEmail,
-          'password': '${testPassword}test',
-        })).thenThrow(Exception('Invalid credentials'));
+        when(
+          mockHttpService.post(
+            'https://api.example.com/signin',
+            body: {
+              'email': testEmail,
+              'password': '${testPassword}test',
+            },
+          ),
+        ).thenThrow(Exception('Invalid credentials'));
 
         final result = await authRepository
             .signIn(email: testEmailAddress, password: testPasswordObject)

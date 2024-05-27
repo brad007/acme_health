@@ -45,7 +45,6 @@ void main() {
       age: 25,
       gender: 'male',
       exerciseFrequency: 'daily',
-      isSmoking: false,
       sleepDuration: 7,
       height: 175,
       weight: 70,

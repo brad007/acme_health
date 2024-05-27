@@ -18,28 +18,35 @@ class QuestionnaireWatcherBloc
     on<QuestionnaireWatcherEvent>((event, emit) {
       event.map(
         watchAllQuestionnairesStarted: (value) {
-          emit(state.copyWith(
-            isLoading: true,
-            failure: none(),
-          ));
+          emit(
+            state.copyWith(
+              isLoading: true,
+              failure: none(),
+            ),
+          );
 
           _questionnaireRepository.getQuestionnaires().listen((questionnaire) {
-            add(QuestionnaireWatcherEvent.questionnairesReceived(
-                questionnaire));
+            add(
+              QuestionnaireWatcherEvent.questionnairesReceived(
+                questionnaire,
+              ),
+            );
           });
         },
         questionnairesReceived: (value) {
-          emit(value.failureOrQuestionnaires.fold(
-            (l) => state.copyWith(
-              isLoading: false,
-              failure: some(l),
+          emit(
+            value.failureOrQuestionnaires.fold(
+              (l) => state.copyWith(
+                isLoading: false,
+                failure: some(l),
+              ),
+              (questionnaires) => state.copyWith(
+                isLoading: false,
+                failure: none(),
+                questionnaires: questionnaires,
+              ),
             ),
-            (questionnaires) => state.copyWith(
-              isLoading: false,
-              failure: none(),
-              questionnaires: questionnaires,
-            ),
-          ));
+          );
         },
       );
     });

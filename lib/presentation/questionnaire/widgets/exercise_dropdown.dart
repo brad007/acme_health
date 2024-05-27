@@ -35,8 +35,10 @@ class ExerciseDropdown extends StatelessWidget {
                     onChanged: (value) {
                       if (value != null) {
                         context.read<QuestionnaireFormBloc>().add(
-                            QuestionnaireFormEvent.exerciseFrequencyChanged(
-                                value));
+                              QuestionnaireFormEvent.exerciseFrequencyChanged(
+                                value,
+                              ),
+                            );
                       }
                     },
                   ),
